@@ -1,1 +1,2 @@
-"# Star-Hunter" 
+# Star Hunter
+## The Game
