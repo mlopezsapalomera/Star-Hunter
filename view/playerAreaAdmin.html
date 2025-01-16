@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script defer src="../controller/playerArea.js"> </script>
+</head>
+
+<body>
+    <h1>Panel de administrador</h1>
+    <h4>Selecciona los valores para comenzar el juego</h4>
+    <label for="gameTime">Temps màxim (segons):</label>
+    <input type="number" id="gameTime" min="10" max="300" value="60">
+    <br>
+    <label for="maxScore">Puntuació màxima:</label>
+    <input type="number" id="maxScore" min="1" max="100" value="10">
+    <br>
+    <button id="setRules">Establir regles</button>
+    <p id="gameRules"></p>
+
+
+    <label for="width">Amplada:</label>
+    <input type="number" id="width" min="100" max="1000" value="500"> px
+    <br>
+    <label for="height">Altura:</label>
+    <input type="number" id="height" min="100" max="1000" value="500"> px
+    <br>
+    <button id="setSize">Establir mida</button>
+    <div id="gameArea" style="border: 1px solid black; width: 500px; height: 500px;"></div>
+
+    <button id="startGame">Iniciar joc</button>
+    <button id="stopGame">Aturar joc</button>
+    <p id="gameStatus">Estat: Aturat</p>
+
+
+
+</body>
+
+</html>
